@@ -15,7 +15,7 @@ def train_model(df) :
         random_state = 98
     )
 
-    model = RandomForestClassifier(class_weight = "balanced_subsample")
+    model = RandomForestClassifier()
 
     model.fit(
         X_train ,
